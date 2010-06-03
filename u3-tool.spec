@@ -1,12 +1,14 @@
 %define name    u3-tool
 %define version 0.3
-%define release %mkrel 1 
 
 Name:           %{name} 
 Summary:        Tool for controlling the special features of a "U3 smart drive" USB Flash disk
 Version:        %{version} 
-Release:        %{release} 
+Release:	%mkrel 2
 Source0:        http://downloads.sourceforge.net/project/u3-tool/%{name}/%{version}/%{name}-%{version}.tar.gz
+# gw fix for off-by-one crash
+# https://sourceforge.net/tracker/?func=detail&aid=3010918&group_id=208198&atid=1004732
+Patch: u3-print-size.patch
 URL:            http://u3-tool.sourceforge.net/
 Group:          System/Configuration/Hardware
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot 
@@ -31,6 +33,7 @@ responsible for any damage to your device.
 
 %prep 
 %setup -q -a 0 
+%patch -p0
 
 %build 
 %configure2_5x
