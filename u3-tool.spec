@@ -4,7 +4,7 @@
 Name:           %{name} 
 Summary:        Tool for controlling the special features of a "U3 smart drive" USB Flash disk
 Version:        %{version} 
-Release:	%mkrel 2
+Release:	%mkrel 3
 Source0:        http://downloads.sourceforge.net/project/u3-tool/%{name}/%{version}/%{name}-%{version}.tar.gz
 # gw fix for off-by-one crash
 # https://sourceforge.net/tracker/?func=detail&aid=3010918&group_id=208198&atid=1004732
