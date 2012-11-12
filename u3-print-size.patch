@@ -1,0 +1,22 @@
+Index: src/main.c
+===================================================================
+--- src/main.c	(Revision 41)
++++ src/main.c	(Arbeitskopie)
+@@ -93,7 +93,7 @@
+ /**
+  * Symbols of size multiplication factors.
+  */
+-char factor_symbols[] = "kMGTPE";
++char factor_symbols[] = " kMGTPE";
+ 
+ /**
+  * Print bytes is human readable fashion.
+@@ -110,7 +110,7 @@
+ 		factor++;
+ 	}
+ 
+-	printf("%.2f %cB", fsize, factor_symbols[factor-1]);
++	printf("%.2f %cB", fsize, factor_symbols[factor]);
+ }
+ 
+ /**
