@@ -52,3 +52,29 @@ rm -rf $RPM_BUILD_ROOT
 %{_sbindir}/u3-tool
 %{_mandir}/man1/u3-tool.1*
 
+
+
+%changelog
+* Fri Dec 09 2011 Götz Waschk <waschk@mandriva.org> 0.3-4mdv2012.0
++ Revision: 739298
+- yearly rebuild
+
+* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3-3mdv2011.0
++ Revision: 615282
+- the mass rebuild of 2010.1 packages
+
+* Thu Jun 03 2010 Götz Waschk <waschk@mandriva.org> 0.3-2mdv2010.1
++ Revision: 547023
+- fix crash in u3-tool -i
+
+* Sun Jan 03 2010 Götz Waschk <waschk@mandriva.org> 0.3-1mdv2010.1
++ Revision: 485926
+- import u3-tool
+
+
+* Sun Jan  3 2010 Götz Waschk <waschk@mandriva.org> 0.3-1mdv2010.1
+- fix URL and description
+- use the right configure macro
+
+* Fri Dec 25 2009 Marianne Lombard <marianne@tuxette.fr> 0.3-1mdv
+- First mandriva package
