@@ -9,7 +9,7 @@ Source0:        http://downloads.sourceforge.net/project/u3-tool/%{name}/%{versi
 # gw fix for off-by-one crash
 # https://sourceforge.net/tracker/?func=detail&aid=3010918&group_id=208198&atid=1004732
 Patch: u3-print-size.patch
-URL:            http://u3-tool.sourceforge.net/
+URL:            https://u3-tool.sourceforge.net/
 Group:          System/Configuration/Hardware
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 License:        GPLv2+ 
