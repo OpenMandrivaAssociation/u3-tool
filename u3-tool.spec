@@ -14,6 +14,11 @@ Group:          System/Configuration/Hardware
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 License:        GPLv2+ 
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Tool for controlling USB flash devices that confirm to the U3
 specifications. This program can control the following features:
